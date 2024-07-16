@@ -20,11 +20,6 @@ app.use(bodyParser.json());
 var token = process.env.TOKEN || 'token';
 var received_updates = [];
 
-app.get('/', function(req, res) {
-  console.log(req);
-  res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
-});
-
 app.get('/webhooks', function(req, res) {
   if (
     req.query['hub.mode'] == 'subscribe' &&
