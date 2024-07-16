@@ -1,0 +1,8 @@
+{
+  "name": "live-shopping-test",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "21.5.0"
+  }
+}
